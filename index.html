@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-container" class="centered-container">
+    <h1>Sign In</h1>
+    <form id="login-form">
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Log In</button>
+    </form>
+    <p class="note">Accounts must be created in the app</p>
+  </div>
+
+  <div id="dashboard" class="hidden">
+    <nav>
+      <h2>Ride Dashboard</h2>
+      <button id="logout-button">Log Out</button>
+    </nav>
+
+    <main>
+      <h3 id="welcome-message"></h3>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/747/747393.png" alt="Motorcycle Icon" class="bike-img">
+        <p>Here's a peek at your latest ride.</p>
+      </div>
+      <div class="card coming-soon">
+        <h4>More Features Coming Soon</h4>
+        <p>Trip comparisons, weather stats, and route exports — all in one place.</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
